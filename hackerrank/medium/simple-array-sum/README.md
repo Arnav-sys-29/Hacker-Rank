@@ -34,7 +34,7 @@ The second line contains $n$ space-separated integers representing the array's e
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-20T23:09:40.757Z  
+**Submitted:** 2026-09-20T23:18:06.835Z  
 
 ```cpp
 #include <bits/stdc++.h>
