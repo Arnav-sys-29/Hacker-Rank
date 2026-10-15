@@ -57,13 +57,13 @@ Explanation: 1 is the only number that appears consecutively for at least three 
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 124 ms  
+**Runtime:** 98 ms  
 **Memory:** 0B  
-**Submitted:** 2026-10-15T17:03:02.478Z  
+**Submitted:** 2026-10-15T17:03:34.546Z  
 
 ```sql
 # Write your MySQL query statement below
-SELECT e1.num AS ConsecutiveNums FROM logs e1 JOIN logs e2 ON e1.id=e2.id-1 JOIN logs e3 ON e2.id=e3.id-1
+SELECT DISTINCT e1.num AS ConsecutiveNums FROM logs e1 JOIN logs e2 ON e1.id=e2.id-1 JOIN logs e3 ON e2.id=e3.id-1
 WHERE e1.num=e2.num AND e2.num=e3.num;
 ```
 
